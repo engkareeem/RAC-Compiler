@@ -1,10 +1,10 @@
 # RAC (Robotic Arm Compiler)
 
-RAC (Robotic Arm Compiler) is a custom compiler built in Python designed specifically for controlling robotic arms using a high-level language. The compiler takes high-level code, parses it, and converts it into an Abstract Syntax Tree (AST), which is then transformed into a JSON representation for further use. RAC supports custom robotic arm commands such as `__setArm` and handles control flow constructs like loops and conditionals.
+RAC (Robotic Arm Compiler) is a custom compiler built in Python designed specifically for controlling robotic arms using a high-level language. The compiler takes high-level code, parses it, and converts it into an Abstract Syntax Tree (AST), which is then transformed into a JSON representation for further use. RAC supports custom robotic arm commands such as `setArm` and handles control flow constructs like loops and conditionals.
 
 ## Features
 - **High-Level Syntax**: Write robotic arm control programs in an easy-to-read, high-level language.
-- **Custom Commands**: Includes specific commands like `__setArm` and `__delay` for robotic arm operations.
+- **Custom Commands**: Includes specific commands like `setArm` and `delay` for robotic arm operations.
 - **JSON Output**: Transforms the parsed AST into JSON for easy integration with other systems.
 - **Control Flow Support**: Includes support for constructs like `if`, `while`, and variable declarations.
 
@@ -50,7 +50,7 @@ Below is an example of the high-level code RAC can compile:
 
 ```
 function test() {
-    __setArm(1, 2, 3, 4, 5);
+    setArm(1, 2, 3, 4, 5);
 }
 number x = 0;
 bool flag = 1;
@@ -65,8 +65,8 @@ while (true) {
     if (flag >= 10) {
         flag = false;
     }
-    __set_arm(x, 10, 0);
-    __delay(100);
+    set_arm(x, 10, 0);
+    delay(100);
 }
 ```
 
