@@ -23,7 +23,7 @@ RAC (Robotic Arm Compiler) is a custom compiler built in Python designed specifi
 1. Clone the repository:
    ```bash
    git clone https://github.com/engkareeem/RAC-Compiler.git
-   cd rac
+   cd RAC-Compiler
    ```
 
 2. Install dependencies:
